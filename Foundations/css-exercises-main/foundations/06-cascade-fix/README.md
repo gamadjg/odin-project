@@ -11,5 +11,5 @@ Issues with the cascade can be the bane for many when it comes to CSS, and while
 ![outcome](https://user-images.githubusercontent.com/70952936/131411210-47ff21dd-6d0c-4a7f-b6b1-1ec40f93dd8c.jpg)
 
 ### Self Check
-- Did you make sure to not edit the HTML file?
-- If you added selectors to the CSS, do they target a valid HTML element?
+X- Did you make sure to not edit the HTML file?
+X- If you added selectors to the CSS, do they target a valid HTML element?
