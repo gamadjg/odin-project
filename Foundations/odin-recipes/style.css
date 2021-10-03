@@ -1,0 +1,60 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.page-name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+#home-recipe-list-style {
+    text-align: center;
+}
+
+
+#home-recipe-list {
+    display: inline-block;
+    text-align: left;
+}
+
+.home-recipe-list-items {
+    list-style-type: none;
+}
+
+.home-recipe-emoji {
+    text-decoration: none;
+}
+
+.recipe-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.body-container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*
+.recipe-items-container {
+    background-color: #97cde8;
+
+}
+*/
+
+/*
+h2 {
+    margin-top: 0%;
+}
+*/
+hr {
+    height: 1px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-color:lightcoral;
+}
