@@ -1,0 +1,69 @@
+.h-container{
+    display: flex;
+}
+
+.h-container div{
+    background: peachpuff;
+    border: 4px solid brown;
+    height: 100px;
+    flex: 1 1 0%;
+}
+
+
+.h-container2{
+    display: flex;
+}
+
+.h-container2 div{
+    background: orange;
+    border: 4px solid black;
+    height: 100px;
+    width: 250px;
+    flex: 1 1 auto;
+}
+
+.h-container2 .two {
+    flex:3 1 0%;
+}
+
+.h-container2 div{
+    background: orange;
+    border: 4px solid black;
+    height: 100px;
+    width: 250px;
+    flex: 1 1 auto;
+}
+
+.h-container2 .two {
+    flex:3 1 0%;
+}
+
+.v-container {
+    display:flex;
+    flex-direction: column;
+}
+
+.v-container div{
+    background: green;
+    border: 4px solid black;
+    height: 100px;
+}
+
+
+#spacey-container {
+    padding: 5px;
+    background-color: burlywood;
+    border:4px solid black;
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    gap: 10px;
+}
+
+#spacey-container div {
+    width: 60px;
+    height: 60px;
+    border: 4px solid darkslategray;
+    background: skyblue;
+}
+
