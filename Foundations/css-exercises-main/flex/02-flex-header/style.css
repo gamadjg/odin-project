@@ -1,7 +1,12 @@
 .header  {
   font-family: monospace;
-  background: papayawhip;
+  background: burlywood;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .logo {
   font-size: 48px;
@@ -22,4 +27,46 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+}
+/*-----------------------------my answer----------------------------*/
+.left-links {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+}
+
+.left-links ul {
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+  padding: 0px;
+
+}
+
+.right-links {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+}
+
+.right-links ul {
+  display: flex;
+  gap: 10px;
+  padding: 0px;
+
+}
+/*-----------------------------correct answer----------------------------*/
+
+.header {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
 }
