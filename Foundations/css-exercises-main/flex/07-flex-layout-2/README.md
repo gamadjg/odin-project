@@ -20,13 +20,13 @@ on a smaller screen it will look like this:
 ![smaller](./desired-outcome-smaller.png)
 
 ### Self Check
-- Header text is size 32px, weight 900
-- Header text is vertically centered and 16px from the edge of the screen.
-- Footer is pushed to bottom of screen (footer may go _below_ the bottom of the screen if the content of the 'cards' section overflows and/or if your screen is shorter)
-- Footer text is centered horizontally and vertically.
-- Sidebar and cards take up all available space above the footer.
-- Sidebar is 300px wide (i.e. it doesn't shrink)
-- Sidebar links are size 24px, white and do not have the underline text decoration.
-- Sidebar has 16px padding.
-- There is 32px padding around the 'cards' section
-- Cards are arranged horizontally, but wrap to multiple lines when they run out of room on the page
+x- Header text is size 32px, weight 900
+x- Header text is vertically centered and 16px from the edge of the screen.
+x- Footer is pushed to bottom of screen (footer may go _below_ the bottom of the screen if the content of the 'cards' section overflows and/or if your screen is shorter)
+x- Footer text is centered horizontally and vertically.
+x- Sidebar and cards take up all available space above the footer.
+x- Sidebar is 300px wide (i.e. it doesn't shrink)
+x- Sidebar links are size 24px, white and do not have the underline text decoration.
+x- Sidebar has 16px padding.
+x- There is 32px padding around the 'cards' section
+x- Cards are arranged horizontally, but wrap to multiple lines when they run out of room on the page
