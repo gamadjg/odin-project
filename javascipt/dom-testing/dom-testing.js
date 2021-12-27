@@ -1,3 +1,41 @@
+// Listen to the onClick event from the corresponding html button
+const btn = document.querySelector('#btn');
+btn.onclick = () => alert("Hello World");
+
+// Listen for all events, and call as many functions as necessary
+const another_btn = document.querySelector("#onEventListenerBtn");
+another_btn.addEventListener('click', () => {
+    console.log("Nameless event listener function.");
+    hello_function();
+    nameless_function('nameless');
+    nameless_function2();
+
+});
+
+function hello_function() {
+    console.log('Hello World function');
+}
+
+const nameless_function = nameless => console.log(nameless + ' function');
+
+const nameless_function2 = () => console.log('nameless function w/o arguments');
+
+//-----------------------------------------------------------------------------------------------------------------------
+// buttons is a node list. It looks and acts much like an array.
+const buttons = document.querySelectorAll('button');
+
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+
+  // and for each one we add a 'click' listener
+  button.addEventListener('click', () => {
+    alert(button.id);
+  });
+});
+
+
+//-------------------------------------------------------------------------------------------------------------------------
+
 // Select the container
 const container = document.querySelector('.testClass');
 

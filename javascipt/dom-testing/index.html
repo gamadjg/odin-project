@@ -3,13 +3,28 @@
 <head>
   <title>Page Title</title>
   <meta charset="UTF-8"/>
-
   <script src = 'dom-testing.js' defer></script>
 </head>
 <body>
+  <h1>Event handlers</h1>
+  <h2>Integrating the onclick js into the html itself</h2>
+  <button onclick="alert('Hello World')">Click me, I'm only listening to the onClick event</button>
+
+  <h2>Calling a js function from another file with an onClick event</h2>
+  <button id="btn">Click me, I'm listening to the onClick event</button>
+
+  <h3>Calling a JS function with the addEventListener event. Allows us to fire off multiple functions.</h3>
+  <button id="onEventListenerBtn">Click me, I'm listening to all events</button>
+
   <div class="testClass">Testing DIV</div>
   <div class="dom_manipulation_exercises"></div>
 
+
+  <div id="container">
+    <button id="1">Click Me</button>
+    <button id="2">Click Me</button>
+    <button id="3">Click Me</button>
+  </div>
   <script>
   </script>
 </body>
