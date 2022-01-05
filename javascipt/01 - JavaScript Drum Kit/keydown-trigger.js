@@ -6,20 +6,26 @@ function playSound(e){
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 
     if(!audio) return;
+    /*
+    if (key.classList.contains('playing')){
+      console.log('playing class still appended to node. transitionEnded() preemptively called. to remove class');
+      transitionEnded(key);
+    }
+    */
     audio.currentTime = 0;
     audio.play();
     key.classList.add('playing');
+    console.log(key);
   };
 
   function transitionEnded(e){
     if(e.propertyName != 'transform') return;
-    console.log(e.propertyName);
+    //console.log(e);
     this.classList.remove('playing');
   };
 
   // Add an event listener to the entire window
   window.addEventListener("keydown", playSound);
 
-  
-  const keys = document.querySelectorAll('.key');
-  keys.forEach(key => key.addEventListener('transitionend', transitionEnded));
+  const whichKeys = document.querySelectorAll('.key');
+  whichKeys.forEach(key => key.addEventListener('transitionend', transitionEnded));
