@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Page Title</title>
+  <title>Rock Paper Scissors</title>
   <meta charset="UTF-8"/>
+  <!-- <script src="/javascipt/rock-paper-scissors/javascript.js"></script> -->
+  <script src="/javascipt/rock-paper-scissors/rps-ui-inclusion.js"></script>
+  <link rel="stylesheet" href="/javascipt/rock-paper-scissors/rps-styles.css"></link>
 </head>
 <body>
-  <script src="/javascipt/rock-paper-scissors/javascript.js"></script>
+  <div class="body-c">
+    <h3 class="pageHeader">Rock Paper Scissors</h3>
+    <p class="directions-c">
+      Select one of the following three options to play against
+      the NPC. The winner of each round will be displayed below. 
+      Best of 5 rounds wins. 
+    </p>
+    <div class="button-c">
+      <button class="btn btn-rock">Rock</button>
+      <button class="btn btn-paper">Paper</button>
+      <button class="btn btn-scissors">Scissors</button>
+    </div>
+    <div class="results-c">
+      <div class="counter-c">
+        Current Game:
+        <p class="result-counter">0/5</p>
+      </div>
+
+      <div class="your-results-c">
+        You selected: 
+        <p class="your-selection"></p>
+      </div>
+
+      <div class="npc-results-c">
+        NPC selected: 
+        <p class="npc-selection"></p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

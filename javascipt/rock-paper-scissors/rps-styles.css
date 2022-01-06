@@ -1,0 +1,65 @@
+body {
+    background-color: floralwhite;
+}
+
+.body-c {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.pageHeader {
+    color: darkblue;
+    font-size: 50px;
+    margin: 0;
+}
+
+.directions-c {
+    width: 600px;
+    font-size: 20px;
+}
+
+.button-c {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-rock, .btn-paper, .btn-scissors{
+    color: forestgreen;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+.results-c {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.counter-c, .your-results-c, .npc-results-c {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.result-counter {
+    margin: 0;
+    text-align: center;
+    /*
+    background-color: ghostwhite;
+    margin: 0;
+    border: solid;
+    padding: 5px 5px 5px 5px;
+    width: 40px;
+*/
+}
+
+.your-selection, .npc-selection {
+    margin: 0px;
+}
+
