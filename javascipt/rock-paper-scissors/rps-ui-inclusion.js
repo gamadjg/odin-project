@@ -25,12 +25,33 @@ function npcSelection(){
   }
 }
 
-function compareSelections(){
-
+function compareSelections(playerSelection, computerSelection){
+  if ((playerSelection === 'rock') && (computerSelection === 'paper')){
+    return 'computer win';
+  }
+  else if ((playerSelection === 'paper') && (computerSelection === 'scissors')){
+    return 'computer win';
+  }
+  else if ((playerSelection === 'scissors') && (computerSelection === 'rock')){
+    return 'computer win';
+  }
+  else if ((playerSelection === 'rock') && (computerSelection === 'scissors')){
+    return 'player win';
+  }
+  else if ((playerSelection === 'paper') && (computerSelection === 'rock')){
+    return 'player win';
+  }
+  else if ((playerSelection === 'scissors') && (computerSelection === 'paper')){
+    return 'player win';
+  }
+  else{
+    // playerSelection and computerSelection are equal
+    return 'TIE!';
+  }
 }
 
-function displayResults(){
-
+function displayResults(roundWinner){
+  console.log(roundWinner)
 }
 
 function playRound(playerSel){
@@ -39,7 +60,7 @@ function playRound(playerSel){
   //console.log(npcSel);
 
   const roundWinner = compareSelections(playerSel, npcSel);
-  displayResults();
+  displayResults(roundWinner);
 }
 
 const buttons = document.querySelectorAll(".rock, .paper, .scissors");
