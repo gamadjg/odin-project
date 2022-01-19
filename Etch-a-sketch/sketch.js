@@ -10,28 +10,22 @@ tb_directions_container.classList.add("tb_directions");
 tbContainer.appendChild(tb_directions_container)
 
 const tb_directions_list = document.createElement("ul")
-tb_directions_list.innerHTML = "\
-    <li>Scroll over the green grid items to convert them to purple</li>"
-
+tb_directions_list.innerHTML = "\<li>Scroll over the green grid items to convert them to purple</li>"
 tb_directions_container.appendChild(tb_directions_list)
-
 
 const tb_button = document.createElement("button");
 tb_button.textContent = "Reset";
 tb_button.classList.add("tb_button");
 tb_button.addEventListener('click', (button) => {
-    if (confirm('Reset grid?')){
+    const newSize = prompt('Enter a new grid size under 100')
+    if (newSize != null){
+
            location.reload()
     }
-    
 })
-
 tbContainer.appendChild(tb_button);
 
-
-
 const grid_container = document.getElementById('grid-c');
-
 for (let i = 1; i<=16; i++) {
     const horizontalGrid = document.createElement('div')
     horizontalGrid.classList.add('row')
@@ -43,27 +37,15 @@ for (let i = 1; i<=16; i++) {
         horizontalGrid.appendChild(verticalGrid)
     }
 }
-//var file = location.pathname.split("Etch-a-sketch/sketch-styles.css", "/" ).pop();
 
 const link = document.createElement( "link" );
 link.rel = "stylesheet";
 link.href = 'sketch-styles.css'//.substr( 0, file.lastIndexOf( "." ) ) + ".css";
-//link.type = "text/css";
-//link.media = "screen,print";
 document.getElementsByTagName( "head" )[0].appendChild( link );
 
-//const gridDiv = document.querySelectorAll('.col')
-/*
-const gridrecolor = document.querySelector('.grid-c')
-gridrecolor.addEventListener("mouseenter", function( event ) {
-    event.target.style.color = "purple";
-})
-*/
 const gridDiv = document.querySelectorAll('.col')
 gridDiv.forEach((gdiv) => {
     gdiv.addEventListener("mouseenter", () => {
-        //gdiv.target.style.color = "purple";
         gdiv.style.backgroundColor = 'purple';
-        //gdiv.target.style.color = "purple";
     })
 })
