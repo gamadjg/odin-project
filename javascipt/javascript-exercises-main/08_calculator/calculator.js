@@ -22,15 +22,15 @@ const multiply = function (arr) {
     return x;
 };
 
-const power = function (arr) {
-    let x = 1;
-    arr.forEach((element) => {
-        x *= element;
-    });
-    return x;
+const power = function (a, b) {
+    return a ** b;
 };
 
-const factorial = function () {};
+const factorial = function (num) {
+    return num <= 0 ? 1 : num * factorial(num - 1);
+    //if (num <= 0) return 1;
+    //else return num * factorialize(num - 1);
+};
 
 // Do not edit below this line
 module.exports = {
