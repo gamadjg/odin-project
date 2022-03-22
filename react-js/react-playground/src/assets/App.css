@@ -1,0 +1,11 @@
+.bodyContainer {
+	display: flex;
+}
+
+.sideNavContainer {
+	flex: 10%;
+}
+
+.mainBodyContainer {
+	flex: 90%;
+}
