@@ -1,4 +1,11 @@
 .siteBody {
 	display: flex;
-	justify-content: space-evenly;
+}
+
+.formSubmission {
+	width: 20%;
+}
+
+.formDisplay {
+	width: 80%;
 }
