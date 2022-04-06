@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../assets/CVForm.css";
 
 const CVForm = ({
 	setFirstName,
@@ -11,7 +12,8 @@ const CVForm = ({
 	setCompany,
 	setPosition,
 	setTasks,
-	setDateWorked,
+	setWorkStartDate,
+	setWorkEndDate,
 }) => {
 	//const [formSubmit, setFormSubmit] = useState(false);
 
@@ -49,14 +51,16 @@ const CVForm = ({
 			setPosition(event.target.value);
 		} else if (fieldName === "tasksInput") {
 			setTasks(event.target.value);
-		} else if (fieldName === "dateWorkedInput") {
-			setDateWorked(event.target.value);
+		} else if (fieldName === "workStartDateInput") {
+			setWorkStartDate(event.target.value);
+		} else if (fieldName === "workEndDateInput") {
+			setWorkEndDate(event.target.value);
 		}
 	};
 
 	const renderField = (fieldName, fieldText, fieldType) => {
 		return (
-			<div>
+			<div className="formFieldContainer">
 				<label htmlFor={fieldName}>{fieldText}</label>
 				<input
 					type={fieldType}
@@ -76,13 +80,14 @@ const CVForm = ({
 			{renderField("lastNameInput", "Last Name", "text")}
 			{renderField("emailInput", "Email", "email")}
 			{renderField("phoneInput", "Telephone", "tel")}
-			{renderField("schoolInput", "Telephone", "text")}
-			{renderField("degreeInput", "Telephone", "text")}
+			{renderField("schoolInput", "School Name", "text")}
+			{renderField("degreeInput", "Degree acquired", "text")}
 			{renderField("schoolDurationInput", "From/To", "date")}
 			{renderField("companyInput", "Current job", "text")}
 			{renderField("positionInput", "Position", "text")}
 			{renderField("tasksInput", "Main tasks", "text")}
-			{renderField("dateWorkedInput", "From/To", "date")}
+			{renderField("workStartDateInput", "From", "date")}
+			{renderField("workEndDateInput", "To", "date")}
 
 			<input type={"submit"} value={"Submit"} />
 		</form>

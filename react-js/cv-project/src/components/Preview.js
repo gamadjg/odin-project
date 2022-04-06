@@ -11,7 +11,8 @@ const Preview = ({
 	company,
 	position,
 	tasks,
-	dateWorked,
+	workStartDate,
+	workEndDate,
 }) => {
 	return (
 		<div>
@@ -25,7 +26,8 @@ const Preview = ({
 			<div>{company}</div>
 			<div>{position}</div>
 			<div>{tasks}</div>
-			<div>{dateWorked}</div>
+			<div>{workStartDate}</div>
+			<div>{workEndDate}</div>
 		</div>
 	);
 };

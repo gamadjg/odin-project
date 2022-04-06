@@ -14,7 +14,8 @@ const Body = () => {
 	const [company, setCompany] = useState("");
 	const [position, setPosition] = useState("");
 	const [tasks, setTasks] = useState("");
-	const [dateWorked, setDateWorked] = useState("");
+	const [workStartDate, setWorkStartDate] = useState("");
+	const [workEndDate, setWorkEndDate] = useState("");
 
 	return (
 		<div className="siteBody">
@@ -30,7 +31,8 @@ const Body = () => {
 					setCompany={setCompany}
 					setPosition={setPosition}
 					setTasks={setTasks}
-					setDateWorked={setDateWorked}
+					setWorkStartDate={setWorkStartDate}
+					setWorkEndDate={setWorkEndDate}
 				/>
 			</div>
 			<div className="formDisplay">
@@ -45,7 +47,8 @@ const Body = () => {
 					company={company}
 					position={position}
 					tasks={tasks}
-					dateWorked={dateWorked}
+					workStartDate={workStartDate}
+					workEndDate={workEndDate}
 				/>
 			</div>
 		</div>
