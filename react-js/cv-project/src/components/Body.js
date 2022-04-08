@@ -10,7 +10,8 @@ const Body = () => {
 	const [phone, setPhone] = useState("");
 	const [school, setSchool] = useState("");
 	const [degree, setDegree] = useState("");
-	const [schoolDuration, setSchoolDuration] = useState("");
+	const [schoolDurationStart, setSchoolDurationStart] = useState("");
+	const [schoolDurationEnd, setSchoolDurationEnd] = useState("");
 	const [company, setCompany] = useState("");
 	const [position, setPosition] = useState("");
 	const [tasks, setTasks] = useState("");
@@ -27,7 +28,8 @@ const Body = () => {
 					setPhone={setPhone}
 					setSchool={setSchool}
 					setDegree={setDegree}
-					setSchoolDuration={setSchoolDuration}
+					setSchoolDurationStart={setSchoolDurationStart}
+					setSchoolDurationEnd={setSchoolDurationEnd}
 					setCompany={setCompany}
 					setPosition={setPosition}
 					setTasks={setTasks}
@@ -43,7 +45,8 @@ const Body = () => {
 					phone={phone}
 					school={school}
 					degree={degree}
-					schoolDuration={schoolDuration}
+					schoolDurationStart={schoolDurationStart}
+					schoolDurationEnd={schoolDurationEnd}
 					company={company}
 					position={position}
 					tasks={tasks}

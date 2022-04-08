@@ -8,7 +8,8 @@ const CVForm = ({
 	setPhone,
 	setSchool,
 	setDegree,
-	setSchoolDuration,
+	setSchoolDurationStart,
+	setSchoolDurationEnd,
 	setCompany,
 	setPosition,
 	setTasks,
@@ -40,8 +41,10 @@ const CVForm = ({
 			setSchool(event.target.value);
 		} else if (fieldName === "degreeInput") {
 			setDegree(event.target.value);
-		} else if (fieldName === "schoolDurationInput") {
-			setSchoolDuration(event.target.value);
+		} else if (fieldName === "schoolDurationStartInput") {
+			setSchoolDurationStart(event.target.value);
+		} else if (fieldName === "schoolDurationEndInput") {
+			setSchoolDurationEnd(event.target.value);
 		}
 
 		// Work Experience: Company name, Position, Main tasks of your jobs, Date from/ to worked
@@ -82,7 +85,8 @@ const CVForm = ({
 			{renderField("phoneInput", "Telephone", "tel")}
 			{renderField("schoolInput", "School Name", "text")}
 			{renderField("degreeInput", "Degree acquired", "text")}
-			{renderField("schoolDurationInput", "From/To", "date")}
+			{renderField("schoolDurationStartInput", "From", "date")}
+			{renderField("schoolDurationEndInput", "To", "date")}
 			{renderField("companyInput", "Current job", "text")}
 			{renderField("positionInput", "Position", "text")}
 			{renderField("tasksInput", "Main tasks", "text")}

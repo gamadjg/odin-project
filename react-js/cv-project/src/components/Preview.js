@@ -7,7 +7,8 @@ const Preview = ({
 	phone,
 	school,
 	degree,
-	schoolDuration,
+	schoolDurationStart,
+	schoolDurationEnd,
 	company,
 	position,
 	tasks,
@@ -22,7 +23,8 @@ const Preview = ({
 			<div>{phone}</div>
 			<div>{school}</div>
 			<div>{degree}</div>
-			<div>{schoolDuration}</div>
+			<div>{schoolDurationStart}</div>
+			<div>{schoolDurationEnd}</div>
 			<div>{company}</div>
 			<div>{position}</div>
 			<div>{tasks}</div>
