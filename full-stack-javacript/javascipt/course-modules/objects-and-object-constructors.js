@@ -44,14 +44,19 @@ function Book(title, author, pages, read) {
 	this.author = author;
 	this.pages = pages;
 	this.read = read;
-	this.info = () => {
-		if (read === 1) {
-			console.log(`${title} by ${author}, ${pages} pages long, read.`);
-			return;
-		}
-		console.log(`${title} by ${author}, ${pages} pages long, not read.`);
-	};
 }
+
+Book.prototype.info = function () {
+	if (this.read === 1) {
+		console.log(
+			`${this.title} by ${this.author}, ${this.pages} pages long, read.`
+		);
+		return;
+	}
+	console.log(
+		`${this.title} by ${this.author}, ${this.pages} pages long, not read.`
+	);
+};
 
 const homeland = new Book("Homeland", "R.A. Salvatore", "352", 1);
 const theHobbit = new Book("The Hobbit", "J.R.R. Tolkein", "295", 0);
